@@ -1,0 +1,69 @@
+<!-- leftPath.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <title>The Escape of the Underworld - Left Path</title>
+  <script>
+    function checkCode() {
+      var userInput = document.getElementById('codeInput').value;
+      var correctCode = '3235';
+
+      if (userInput === correctCode) {
+        // Redirect to the next page if the code is correct
+        window.location.href = '/leftPathSuccess'; // Update this to the correct route
+      } else {
+        // Display alert if the code is incorrect
+        alert("Annabeth says, 'Uh oh. That's not right. We need to try again.'");
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="content-box">
+    <h1>The Escape of the Underworld</h1>
+    <p>
+      Percy, Annabeth, and Grover run through the left path of the tunnel and encounter a dead end. Grover tripped on something that ended up being a lever.
+    </p>
+    <p>
+      Annabeth shouted, “Wait! We need to get out, this is a trap!”
+    </p>
+    <p>
+      Before they could run away, prison bars appeared from the ground and trapped them at the end of the tunnel.
+    </p>
+    <p>
+      “At least the tunnel's small enough so that Cerberus can't get us,” said Percy, laughing nervously.
+    </p>
+    <p>
+      Annabeth looked at the bars and quickly found a lock with a four-digit code. She searched everywhere and found writing on the tunnel.
+    </p>
+    <blockquote> <em>
+      “Three fates weave destiny's line,<br>
+      A secret code, their path defines.<br>
+      Count them well, from first to last,<br>
+      The code revealed, your escape amassed.<br><br>
+
+      The second, count the horns of the creature seen,<br>
+      In the mighty maze known to cause a scene.<br>
+      Count them true, don't be misled,<br>
+      To the third, sum the guard dog's heads.<br><br>
+
+      For the fourth, use the next prime,<br>
+      Complete the code, in this rhyme.<br>
+      From left to right, the sequence true,<br>
+      Your path to freedom, now in view.”
+    </em>
+    </blockquote>
+    <p>
+      Using the hint, enter the four-digit code to get through.
+    </p>
+    <form>
+      <label for="codeInput">Enter the code:</label>
+      <input type="text" id="codeInput" name="codeInput" required>
+      <button type="button" onclick="checkCode()">Submit Code</button>
+    </form>
+  </div>
+</body>
+</html>

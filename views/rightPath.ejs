@@ -1,0 +1,76 @@
+<!-- rightPath.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <title>Escape the UnderWorld - Right Path</title>
+  <script>
+    function checkPhrase() {
+      var userInput = document.getElementById('phraseInput').value.toLowerCase();
+      var correctPhrase = 'use the red ball you have to get past cerberus';
+
+      if (userInput === correctPhrase) {
+        // Redirect to the next page if the phrase is correct
+        window.location.href = '/thirdPuzzle'; // Update this to the correct route
+      } else {
+        // Display alert if the phrase is incorrect
+        alert("Annabeth says, 'I don't think that's what she meant. Wait, maybe the words aren't even in the correct order. Let's try again.'");
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="content-box">
+    <h1>The Escape of the Underworld</h1>
+    <p>
+      Percy, Annabeth, and Grover walked into the right path of the tunnel. As they made it halfway through the tunnel, they noticed that they're heading towards a dead end.
+    </p>
+    <p>
+      “Well great. We probably should turn around and escape before Cerberus gets here,” Percy muttered.
+    </p>
+    <p>
+      “No, wait,” Grover pointed, “There's some sort of light at the end of the tunnel.”
+    </p>
+    <p>
+      Annabeth looked towards the direction of where Grover was pointing and said, “Grover's right, Percy. Come on, let's check it out.”
+    </p>
+    <p>
+      Near the end of the tunnel, there was a small leak of water and a bit of light on the tunnel wall. The light and the water combined and formed a rainbow.
+    </p>
+    <p>
+      On the rainbow, some words appeared:
+    </p>
+    <blockquote><em>
+      “I'm glad you found this message. I am Iris, the Goddess of the Rainbow. I have been watching you all throughout your quest. I see that you are stuck escaping Cerberus. I must tell you this before Hades somehow finds out that I tried to communicate with you here. You must know that-”
+    </em>
+    </blockquote>
+    <p>
+      Suddenly the rainbow flickered.
+    </p>
+    <p>
+      “What happened?” Percy asked.
+    </p>
+    <p>
+      “Hades.” said Annabeth. “He must've interfered with the message.”
+    </p>
+    <p>
+      Suddenly some text appeared on the rainbow:
+    </p>
+    <blockquote>
+        <em>
+      "der eht veah llba uyo seU ot tge surebrec tasp"
+        </em>
+    </blockquote>
+    <p>
+      “Hades must have scrambled the message before we could see it. We need to unscramble it to figure out what the goddess was trying to tell us.”
+    </p>
+    <form>
+      <label for="phraseInput">Enter in the unscrambled phrase:</label>
+      <input type="text" id="phraseInput" name="phraseInput" required>
+      <button type="button" onclick="checkPhrase()">Submit Phrase</button>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!-- firstPuzzle.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <title>Escape the UnderWorld - First Puzzle</title>
+  <script>
+    function checkAnswer() {
+      var userInput = document.getElementById('answerInput').value.toLowerCase();
+      var correctAnswer = 'cerberus';
+
+      if (userInput === correctAnswer) {
+        // Redirect to the next page if the answer is correct
+        window.location.href = '/secondPuzzleIntro'; // Update this to the correct route
+      } else {
+        // Display alert if the answer is incorrect
+        alert("Percy says, 'That's not the right answer. Try again, or we'll be stuck here forever.'");
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="content-box">
+    <h1>The Escape of the Underworld</h1>
+    <p>
+      Engraved on the box is the following riddle:
+    </p>
+    <blockquote><em>
+      "Within the river where Styx does flow,<br>
+      A creature guards with eyes aglow.<br>
+      Answer me this, oh heroes bold,<br>
+      What creature guards the underworld's gold?"
+      <br><br>
+      Speak the answer, let knowledge flow,<br>
+      And the box shall open, its contents show.<br>
+      Drachmas gleaming, a treasure untold,<br>
+      For the journey ahead, a fortune to hold.
+      </em>
+    </blockquote>
+    <form>
+      <label for="answerInput">Enter the answer in order to open the box:</label>
+      <input type="text" id="answerInput" name="answerInput" required>
+      <button type="button" onclick="checkAnswer()">Submit Answer</button>
+    </form>
+  </div>
+</body>
+</html>

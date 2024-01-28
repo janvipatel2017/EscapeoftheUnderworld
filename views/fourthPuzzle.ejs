@@ -1,0 +1,83 @@
+<!-- fourthPuzzle.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <title>Escape the UnderWorld - Fourth Puzzle</title>
+  <script>
+    function validateRocks() {
+      const firstRock = document.getElementById('firstRock').value.toLowerCase();
+      const secondRock = document.getElementById('secondRock').value.toLowerCase();
+      const thirdRock = document.getElementById('thirdRock').value.toLowerCase();
+      const fourthRock = document.getElementById('fourthRock').value.toLowerCase();
+
+      if (firstRock === 'left' && secondRock === 'left' && thirdRock === 'left' && fourthRock === 'right') {
+        // Correct combination, navigate to the next page
+        window.location.href = '/successfulEscape';
+      } else {
+        // Incorrect combination, show alert
+        alert("Grover stepped on the wrong rock, which caused the rock to crumble. He fell back on the ledge, and all the rocks appeared again. 'Great,' muttered Grover, 'I need to try again.'");
+      }
+    }
+  </script> 
+</head>
+
+<body>
+
+  <div class="content-box">
+    <h1>The Escape of the Underworld</h1>
+    <p>
+      "Hades is the best brother of the mighty three!" shouted Percy, Annabeth, and Grover in unison. The tree created an opening for the three to slip through.
+      "Hades sure has a fun time making our lives miserable," muttered Percy.
+    </p>
+    <p>
+      The three walked through Asphodel Fields for miles. In the distance, they saw Hades's palace.
+      "We're almost there," said Annabeth. "We just need to walk to the pal-"
+    </p>
+    <p>
+      "Woah uhhhh what's going on," exclaimed Grover as his magic shoes began to fly without using the command word.
+      "GROVER," Percy and Annabeth yelled as they tried to chase Grover, who flew in the opposite direction of the palace, towards a cliff. The shoes eventually left Grover's feet, but before Annabeth and Percy caught up to Grover, Grover plummeted down the cliff.
+      "No!" screamed Annabeth and Percy.
+    </p>
+    <p>
+      They looked down at the edge of the cliff, and to their surprise, they saw Grover on a ledge of the cliff.
+      "Percy! Annabeth! I'm okay! It looks like there's some rocks that I can use to climb back up the cliff."
+      Grover grabbed one of the rocks, but it suddenly crumbled. He touched the one right next to it, which didn't crumble and was strong enough to hold his weight.
+      He looked above and saw that there were four more rows of rocks, one on the left and one on the right.
+      "Hey guys," Grover said, "It looks like one rock from each row is strong enough for me to climb. I'll climb the rocks, and you can pull me when I make it to the top."
+    </p>
+
+     
+
+    <!-- Form for rock choices -->
+    
+        <div>
+          <label for="firstRock">First Rock (Choose left or right): </label>
+          <input type="text" id="firstRock" name="firstRock" required>
+        </div>
+        <br>
+        <div>
+          <label for="secondRock">Second Rock (Choose left or right): </label>
+          <input type="text" id="secondRock" name="secondRock" required>
+        </div>
+        <br>
+        <div>
+          <label for="thirdRock">Third Rock (Choose left or right): </label>
+          <input type="text" id="thirdRock" name="thirdRock" required>
+        </div>
+        <br>
+        <div>
+          <label for="fourthRock">Fourth Rock (Choose left or right): </label>
+          <input type="text" id="fourthRock" name="fourthRock" required>
+        </div>
+        <br>
+        <button type="submit" onclick="validateRocks()">Submit</button>
+      
+  </div>
+
+</body>
+
+</html>

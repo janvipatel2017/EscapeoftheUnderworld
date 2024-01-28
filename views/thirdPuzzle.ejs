@@ -1,0 +1,64 @@
+<!-- thirdPuzzle.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <title>Escape the UnderWorld - Third Puzzle</title>
+  <script>
+    function checkPhrase() {
+      var userInput = document.getElementById('phraseInput').value.toLowerCase();
+      var correctPhrase = 'hades is the best brother of the mighty three';
+
+      if (userInput === correctPhrase) {
+        // Redirect to the next page if the phrase is correct
+        window.location.href = '/fourthPuzzle'; // Update this to the correct route
+      } else {
+        // Display alert if the phrase is incorrect
+        alert("Annabeth says, 'Hmmm, I don't think that's correct. Let's try again.'");
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="content-box">
+    <h1>The Escape of the Underworld</h1>
+    <p>
+      “Use the red ball you have to get past Cerberus!” Annabeth exclaimed. “Of course!”
+    </p>
+    <p>
+      Annabeth, Percy, and Grover ran back outside the tunnel. Annabeth took the red ball and distracted Cerberus enough to make an escape. As the three passed through a metal detector, an alarm went off. Security ghouls gathered to find out the cause of the commotion.
+    </p>
+    <p>
+      “Quick!” Annabeth exclaimed. “Hide in here!”
+    </p>
+    <p>
+      The three hid in a hollowed-out, rotten tree as the security ghouls passed by.
+    </p>
+    <p>
+      “Phew,” said Grover, relieved. “Thought we might've run into more trouble.”
+    </p>
+    <p>
+      The tree's entrance suddenly closed, locking Percy, Annabeth, and Grover inside.
+    </p>
+    <p>
+      “Spoke too soon,” muttered Grover.
+    </p>
+    <p>
+      Percy shined a light and saw that there was some sort of puzzle carved on the tree.
+    </p>
+    <p>
+      Percy said, “It says we need to solve this puzzle and say the phrase in order to get out of this tree.”
+    </p>
+    <!-- Add the image puzzle here -->
+    <img src="../puzzlemakerr.png" alt="Image Puzzle">
+    <br>
+    <form>
+      <label for="phraseInput">Enter in the phrase Percy, Annabeth, and Grover must chant:</label>
+      <input type="text" id="phraseInput" name="phraseInput" required>
+      <button type="button" onclick="checkPhrase()">Submit Phrase</button>
+    </form>
+  </div>
+</body>
+</html>

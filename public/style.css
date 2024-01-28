@@ -1,0 +1,55 @@
+/* public/styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('./pcj_101_hu0010_comp_v080.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .content-box {
+    background-color: rgba(255, 250, 201, 0.8); /* Adjust the alpha value for background transparency */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 600px;
+    /*height just added*/
+    height: auto;
+    margin: 0 auto; /* Center the content box horizontally */
+  }
+  .content-box img {
+    /* Styles specifically for the image inside the content box */
+    max-width: 100%;
+    height: auto;
+    display: block; /* Ensures that the image is treated as a block element */
+    margin: 0 auto; /* Centers the image horizontally */
+  }
+
+  
+  h1 {
+    color: #3e1717;
+  }
+  
+  p {
+    line-height: 1.6;
+    color: #666;
+  }
+  
+  button {
+    display: center;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #581c1c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
