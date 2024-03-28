@@ -1,4 +1,4 @@
-#**Escape of the Underworld**
+# **Escape of the Underworld**
 
 Here is a Percy Jackson themed virtual escape room I have created that allows users to tackle various puzzles and challenges.
 Users will only be able to proceed to following pages once they solve their current puzzle.
