@@ -5,4 +5,6 @@ Users will only be able to proceed to following pages once they solve their curr
 
 Created using JavaScript, HTML, and CSS.
 
+Link to deployed application: https://escapeoftheunderworld.onrender.com/
+
 Author: Janvi Patel
